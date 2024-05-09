@@ -1,7 +1,7 @@
+@testable import NotifyLabel
 import XCTest
-@testable import notifylabel_sp
 
-final class notifylabel_spTests: XCTestCase {
+final class NotifyLabelTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

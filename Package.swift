@@ -4,20 +4,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "notifylabel-sp",
+    name: "NotifyLabel",
+    platforms: [
+        .iOS(.v13), // Adjust the version according to your project's requirements
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "notifylabel-sp",
-            targets: ["notifylabel-sp"]),
+            name: "NotifyLabel",
+            targets: ["NotifyLabel"]
+        ),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "notifylabel-sp"),
+            name: "NotifyLabel",
+            dependencies: []
+        ),
         .testTarget(
-            name: "notifylabel-spTests",
-            dependencies: ["notifylabel-sp"]),
+            name: "NotifyLabelTests",
+            dependencies: ["NotifyLabel"]
+        ),
     ]
 )
